@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.KreiranjeRezervacijeKontroler">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox spacing="20.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefWidth="250.0" spacing="20.0">
+                     <children>
+                        <Label text="Unesite podatke o putniku">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="imeTF" prefHeight="35.0" promptText="Ime" />
+                        <TextField fx:id="prezimeTF" prefHeight="35.0" promptText="Prezime" />
+                        <TextField fx:id="jmbTF" prefHeight="35.0" promptText="Jmb" />
+                        <TextField fx:id="pasosTF" prefHeight="35.0" promptText="Pasos" />
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" />
+                  <TableView fx:id="tableView" prefWidth="800.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="kreirajBTN" mnemonicParsing="false" onAction="#kreirajAction" prefHeight="35.0" prefWidth="140.0" text="Rezervisi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

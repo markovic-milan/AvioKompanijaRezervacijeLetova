@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AzuriranjeLinijeKontroler">
+   <children>
+      <VBox alignment="CENTER" prefHeight="350.0" prefWidth="300.0" spacing="15.0">
+         <children>
+            <ComboBox fx:id="comboF" prefHeight="30.0" prefWidth="300.0" promptText="Leti od" />
+            <ComboBox fx:id="comboT" prefHeight="30.0" prefWidth="300.0" promptText="Leti do" />
+            <Label text="Unesite vrijeme [hh:mm:ss]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="vrijemeOd" prefHeight="30.0" prefWidth="92.0" promptText="Vrijeme od" />
+            <TextField fx:id="vrijemeDo" prefHeight="30.0" promptText="Vrijeme do" />
+            <Button fx:id="azurirajBTN" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" text="Azuriraj">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
